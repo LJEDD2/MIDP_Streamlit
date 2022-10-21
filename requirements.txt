@@ -8,3 +8,7 @@ plotly
 seaborn
 matplotlib
 koreanize_matplotlib
+cufflinks
+
+streamlit_folium
+pyecharts
