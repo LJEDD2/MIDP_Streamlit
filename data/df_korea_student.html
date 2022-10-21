@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/westeros.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'c0369dcf3d6e4c278cc39fa97424d04a')">중학생의 졸업 후 고교 선정 기준 </button>
+            <button class="tablinks" onclick="showChart(event, 'c1bce78651e8438b97fef354a394a48c')">고등학생의 졸업 후 향후 진로 계획</button>
+    </div>
+
+    <div class="box">
+                <div id="c0369dcf3d6e4c278cc39fa97424d04a" class="chart-container" style="width:650px; height:500px;"></div>
+    <script>
+        var chart_c0369dcf3d6e4c278cc39fa97424d04a = echarts.init(
+            document.getElementById('c0369dcf3d6e4c278cc39fa97424d04a'), 'westeros', {renderer: 'canvas'});
+        var option_c0369dcf3d6e4c278cc39fa97424d04a = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "pie",
+                "clockwise": true,
+                "data": [
+                    {
+                        "name": "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                        "value": 1895.0
+                    },
+                    {
+                        "name": "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                        "value": 778.0
+                    },
+                    {
+                        "name": "\uc131\uc801",
+                        "value": 1330.0
+                    },
+                    {
+                        "name": "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                        "value": 740.0
+                    },
+                    {
+                        "name": "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                        "value": 158.0
+                    },
+                    {
+                        "name": "\uce5c\uad6c",
+                        "value": 325.0
+                    },
+                    {
+                        "name": "\uacbd\uc81c\uc801 \uc774\uc720",
+                        "value": 65.0
+                    },
+                    {
+                        "name": "\ud1b5\ud559 \uac70\ub9ac",
+                        "value": 1076.0
+                    },
+                    {
+                        "name": "\uae30\ud0c0",
+                        "value": 106.0
+                    },
+                    {
+                        "name": "\uc5c6\uc74c",
+                        "value": 1166.0
+                    }
+                ],
+                "radius": [
+                    "30%",
+                    "60%"
+                ],
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "roseType": "radius",
+                "label": {
+                    "show": true,
+                    "position": "outside",
+                    "margin": 8,
+                    "formatter": "{b}\n{d}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "2016\ub144\ub3c4",
+                "2017\ub144\ub3c4",
+                "2018\ub144\ub3c4",
+                "2019\ub144\ub3c4",
+                "2020\ub144\ub3c4"
+            ]
+        }
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                        "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                        "\uc131\uc801",
+                        "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                        "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                        "\uce5c\uad6c",
+                        "\uacbd\uc81c\uc801 \uc774\uc720",
+                        "\ud1b5\ud559 \uac70\ub9ac",
+                        "\uae30\ud0c0",
+                        "\uc5c6\uc74c"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                            "value": 2144.0
+                        },
+                        {
+                            "name": "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                            "value": 1197.0
+                        },
+                        {
+                            "name": "\uc131\uc801",
+                            "value": 1865.0
+                        },
+                        {
+                            "name": "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                            "value": 834.0
+                        },
+                        {
+                            "name": "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                            "value": 226.0
+                        },
+                        {
+                            "name": "\uce5c\uad6c",
+                            "value": 334.0
+                        },
+                        {
+                            "name": "\uacbd\uc81c\uc801 \uc774\uc720",
+                            "value": 105.0
+                        },
+                        {
+                            "name": "\ud1b5\ud559 \uac70\ub9ac",
+                            "value": 945.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0",
+                            "value": 147.0
+                        },
+                        {
+                            "name": "\uc5c6\uc74c",
+                            "value": 1173.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uc911\ud559\uc0dd \uc9c4\ud559 \uc120\ud0dd \uae30\uc900",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                        "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                        "\uc131\uc801",
+                        "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                        "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                        "\uce5c\uad6c",
+                        "\uacbd\uc81c\uc801 \uc774\uc720",
+                        "\ud1b5\ud559 \uac70\ub9ac",
+                        "\uae30\ud0c0",
+                        "\uc5c6\uc74c"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                            "value": 2167.0
+                        },
+                        {
+                            "name": "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                            "value": 1176.0
+                        },
+                        {
+                            "name": "\uc131\uc801",
+                            "value": 1594.0
+                        },
+                        {
+                            "name": "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                            "value": 652.0
+                        },
+                        {
+                            "name": "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                            "value": 252.0
+                        },
+                        {
+                            "name": "\uce5c\uad6c",
+                            "value": 353.0
+                        },
+                        {
+                            "name": "\uacbd\uc81c\uc801 \uc774\uc720",
+                            "value": 82.0
+                        },
+                        {
+                            "name": "\ud1b5\ud559 \uac70\ub9ac",
+                            "value": 914.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0",
+                            "value": 249.0
+                        },
+                        {
+                            "name": "\uc5c6\uc74c",
+                            "value": 1216.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uc911\ud559\uc0dd \uc9c4\ud559 \uc120\ud0dd \uae30\uc900",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                        "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                        "\uc131\uc801",
+                        "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                        "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                        "\uce5c\uad6c",
+                        "\uacbd\uc81c\uc801 \uc774\uc720",
+                        "\ud1b5\ud559 \uac70\ub9ac",
+                        "\uae30\ud0c0",
+                        "\uc5c6\uc74c"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                            "value": 2487.0
+                        },
+                        {
+                            "name": "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                            "value": 1281.0
+                        },
+                        {
+                            "name": "\uc131\uc801",
+                            "value": 1251.0
+                        },
+                        {
+                            "name": "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                            "value": 751.0
+                        },
+                        {
+                            "name": "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                            "value": 230.0
+                        },
+                        {
+                            "name": "\uce5c\uad6c",
+                            "value": 354.0
+                        },
+                        {
+                            "name": "\uacbd\uc81c\uc801 \uc774\uc720",
+                            "value": 119.0
+                        },
+                        {
+                            "name": "\ud1b5\ud559 \uac70\ub9ac",
+                            "value": 866.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0",
+                            "value": 134.0
+                        },
+                        {
+                            "name": "\uc5c6\uc74c",
+                            "value": 886.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uc911\ud559\uc0dd \uc9c4\ud559 \uc120\ud0dd \uae30\uc900",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                        "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                        "\uc131\uc801",
+                        "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                        "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                        "\uce5c\uad6c",
+                        "\uacbd\uc81c\uc801 \uc774\uc720",
+                        "\ud1b5\ud559 \uac70\ub9ac",
+                        "\uae30\ud0c0",
+                        "\uc5c6\uc74c"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                            "value": 2200.0
+                        },
+                        {
+                            "name": "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                            "value": 1037.0
+                        },
+                        {
+                            "name": "\uc131\uc801",
+                            "value": 1363.0
+                        },
+                        {
+                            "name": "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                            "value": 279.0
+                        },
+                        {
+                            "name": "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                            "value": 86.0
+                        },
+                        {
+                            "name": "\uce5c\uad6c",
+                            "value": 321.0
+                        },
+                        {
+                            "name": "\uacbd\uc81c\uc801 \uc774\uc720",
+                            "value": 875.0
+                        },
+                        {
+                            "name": "\ud1b5\ud559 \uac70\ub9ac",
+                            "value": 642.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0",
+                            "value": 176.0
+                        },
+                        {
+                            "name": "\uc5c6\uc74c",
+                            "value": 1074.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uc911\ud559\uc0dd \uc9c4\ud559 \uc120\ud0dd \uae30\uc900",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                        "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                        "\uc131\uc801",
+                        "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                        "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                        "\uce5c\uad6c",
+                        "\uacbd\uc81c\uc801 \uc774\uc720",
+                        "\ud1b5\ud559 \uac70\ub9ac",
+                        "\uae30\ud0c0",
+                        "\uc5c6\uc74c"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ud76c\ub9dd\ud558\ub294 \uc9c4\ub85c\u00b7\uc9c1\uc5c5 \ubaa9\ud45c",
+                            "value": 1895.0
+                        },
+                        {
+                            "name": "\uc88b\uc544\ud558\ub294 \uac83(\ud765\ubbf8)\uacfc \uc798\ud558\ub294 \uac83(\uc801\uc131)",
+                            "value": 778.0
+                        },
+                        {
+                            "name": "\uc131\uc801",
+                            "value": 1330.0
+                        },
+                        {
+                            "name": "\ubd80\ubaa8\ub2d8\uc758 \ud76c\ub9dd",
+                            "value": 740.0
+                        },
+                        {
+                            "name": "\uc120\uc0dd\ub2d8\uc758 \uc870\uc5b8",
+                            "value": 158.0
+                        },
+                        {
+                            "name": "\uce5c\uad6c",
+                            "value": 325.0
+                        },
+                        {
+                            "name": "\uacbd\uc81c\uc801 \uc774\uc720",
+                            "value": 65.0
+                        },
+                        {
+                            "name": "\ud1b5\ud559 \uac70\ub9ac",
+                            "value": 1076.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0",
+                            "value": 106.0
+                        },
+                        {
+                            "name": "\uc5c6\uc74c",
+                            "value": 1166.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uc911\ud559\uc0dd \uc9c4\ud559 \uc120\ud0dd \uae30\uc900",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_c0369dcf3d6e4c278cc39fa97424d04a.setOption(option_c0369dcf3d6e4c278cc39fa97424d04a);
+    </script>
+                <div id="c1bce78651e8438b97fef354a394a48c" class="chart-container" style="width:650px; height:500px;"></div>
+    <script>
+        var chart_c1bce78651e8438b97fef354a394a48c = echarts.init(
+            document.getElementById('c1bce78651e8438b97fef354a394a48c'), 'westeros', {renderer: 'canvas'});
+        var option_c1bce78651e8438b97fef354a394a48c = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "pie",
+                "clockwise": true,
+                "data": [
+                    {
+                        "name": "\ub300\ud559 \uc9c4\ud559",
+                        "value": 6211.0
+                    },
+                    {
+                        "name": "\ucde8\uc5c5",
+                        "value": 995.0
+                    },
+                    {
+                        "name": "\ucc3d\uc5c5",
+                        "value": 119.0
+                    },
+                    {
+                        "name": "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                        "value": 278.0
+                    },
+                    {
+                        "name": "\uc9c4\ub85c\ubbf8\uacb0\uc815",
+                        "value": 929.0
+                    }
+                ],
+                "radius": [
+                    "30%",
+                    "60%"
+                ],
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "roseType": "radius",
+                "label": {
+                    "show": true,
+                    "position": "outside",
+                    "margin": 8,
+                    "formatter": "{b}\n{d}%"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "bottom": "-5px",
+            "data": [
+                "2016\ub144\ub3c4",
+                "2017\ub144\ub3c4",
+                "2018\ub144\ub3c4",
+                "2019\ub144\ub3c4",
+                "2020\ub144\ub3c4"
+            ]
+        }
+    },
+    "options": [
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ub300\ud559 \uc9c4\ud559",
+                        "\ucde8\uc5c5",
+                        "\ucc3d\uc5c5",
+                        "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                        "\uc9c4\ub85c\ubbf8\uacb0\uc815"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ub300\ud559 \uc9c4\ud559",
+                            "value": 7471.0
+                        },
+                        {
+                            "name": "\ucde8\uc5c5",
+                            "value": 1423.0
+                        },
+                        {
+                            "name": "\ucc3d\uc5c5",
+                            "value": 154.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                            "value": 413.0
+                        },
+                        {
+                            "name": "\uc9c4\ub85c\ubbf8\uacb0\uc815",
+                            "value": 833.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uace0\ub4f1\ud559\uc0dd \uc878\uc5c5 \ud6c4 \uc9c4\ub85c\uacc4\ud68d",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ub300\ud559 \uc9c4\ud559",
+                        "\ucde8\uc5c5",
+                        "\ucc3d\uc5c5",
+                        "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                        "\uc9c4\ub85c\ubbf8\uacb0\uc815"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ub300\ud559 \uc9c4\ud559",
+                            "value": 7532.0
+                        },
+                        {
+                            "name": "\ucde8\uc5c5",
+                            "value": 1287.0
+                        },
+                        {
+                            "name": "\ucc3d\uc5c5",
+                            "value": 167.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                            "value": 397.0
+                        },
+                        {
+                            "name": "\uc9c4\ub85c\ubbf8\uacb0\uc815",
+                            "value": 1030.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uace0\ub4f1\ud559\uc0dd \uc878\uc5c5 \ud6c4 \uc9c4\ub85c\uacc4\ud68d",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ub300\ud559 \uc9c4\ud559",
+                        "\ucde8\uc5c5",
+                        "\ucc3d\uc5c5",
+                        "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                        "\uc9c4\ub85c\ubbf8\uacb0\uc815"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ub300\ud559 \uc9c4\ud559",
+                            "value": 6908.0
+                        },
+                        {
+                            "name": "\ucde8\uc5c5",
+                            "value": 1216.0
+                        },
+                        {
+                            "name": "\ucc3d\uc5c5",
+                            "value": 145.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                            "value": 370.0
+                        },
+                        {
+                            "name": "\uc9c4\ub85c\ubbf8\uacb0\uc815",
+                            "value": 907.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uace0\ub4f1\ud559\uc0dd \uc878\uc5c5 \ud6c4 \uc9c4\ub85c\uacc4\ud68d",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ub300\ud559 \uc9c4\ud559",
+                        "\ucde8\uc5c5",
+                        "\ucc3d\uc5c5",
+                        "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                        "\uc9c4\ub85c\ubbf8\uacb0\uc815"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ub300\ud559 \uc9c4\ud559",
+                            "value": 5854.0
+                        },
+                        {
+                            "name": "\ucde8\uc5c5",
+                            "value": 1159.0
+                        },
+                        {
+                            "name": "\ucc3d\uc5c5",
+                            "value": 159.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                            "value": 374.0
+                        },
+                        {
+                            "name": "\uc9c4\ub85c\ubbf8\uacb0\uc815",
+                            "value": 819.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uace0\ub4f1\ud559\uc0dd \uc878\uc5c5 \ud6c4 \uc9c4\ub85c\uacc4\ud68d",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "legend": [
+                {
+                    "data": [
+                        "\ub300\ud559 \uc9c4\ud559",
+                        "\ucde8\uc5c5",
+                        "\ucc3d\uc5c5",
+                        "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                        "\uc9c4\ub85c\ubbf8\uacb0\uc815"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "75%",
+                    "bottom": "70%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14,
+                    "icon": "pin"
+                }
+            ],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "\ub300\ud559 \uc9c4\ud559",
+                            "value": 6211.0
+                        },
+                        {
+                            "name": "\ucde8\uc5c5",
+                            "value": 995.0
+                        },
+                        {
+                            "name": "\ucc3d\uc5c5",
+                            "value": 119.0
+                        },
+                        {
+                            "name": "\uae30\ud0c0(\uad70\uc785\ub300 \ud574\uc678 \uc720\ud559)",
+                            "value": 278.0
+                        },
+                        {
+                            "name": "\uc9c4\ub85c\ubbf8\uacb0\uc815",
+                            "value": 929.0
+                        }
+                    ],
+                    "radius": [
+                        "30%",
+                        "60%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radius",
+                    "label": {
+                        "show": true,
+                        "position": "outside",
+                        "margin": 8,
+                        "formatter": "{b}\n{d}%"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "text": "\uc804\uad6d \uace0\ub4f1\ud559\uc0dd \uc878\uc5c5 \ud6c4 \uc9c4\ub85c\uacc4\ud68d",
+                    "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \uc62c\ub824 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+                    "padding": 5,
+                    "itemGap": 10
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ]
+};
+        chart_c1bce78651e8438b97fef354a394a48c.setOption(option_c1bce78651e8438b97fef354a394a48c);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
