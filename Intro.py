@@ -3,18 +3,16 @@ import pandas as pd
 import seaborn as sns
 import plotly.express as px
 import matplotlib.pyplot as plt
-import cufflinks as cf
-import chart_studio
 import folium
-from folium.plugins import MarkerCluster
 import json
+
 import streamlit as st
 from streamlit_folium import st_folium
 import time
 import koreanize_matplotlib
 from pyecharts.globals import ThemeType
 from pyecharts.commons.utils import JsCode
-from pyecharts.charts import Bar, Bar3D, Grid, Line, Liquid, Page, Pie, Timeline, Tab, Map, Grid
+from pyecharts.charts import Bar, Bar3D, Line, Pie, Timeline, Tab
 from pyecharts import options as opts
 
 st.set_page_config(layout='wide')
@@ -39,7 +37,6 @@ with st.echo():
     import koreanize_matplotlib
     
     import folium
-    from folium.plugins import MarkerCluster
     import json
 
     import streamlit as st
