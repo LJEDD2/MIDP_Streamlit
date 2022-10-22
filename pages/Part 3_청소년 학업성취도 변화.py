@@ -59,7 +59,7 @@ if st.checkbox('Show Code',key = 1):
 # 국어 로드
 @st.cache(allow_output_mutation=True)
 def load_national_reading():
-    data = pd.read_excel("https://raw.githubusercontent.com/wumusill/Structure/main/dataset/international_test.xls", sheet_name=0)
+    data = pd.read_excel("data/international_test.xls", sheet_name=0)
     return data
 
 national_reading = load_national_reading()
@@ -69,7 +69,7 @@ national_reading[["Average", "Standard Error"]] = national_reading[["Average", "
 # 수학 로드
 @st.cache(allow_output_mutation=True)
 def load_national_math():
-    data = pd.read_excel("https://raw.githubusercontent.com/wumusill/Structure/main/dataset/international_test.xls", sheet_name=1)
+    data = pd.read_excel("data/international_test.xls", sheet_name=1)
     return data
 
 national_math = load_national_math()
@@ -79,7 +79,7 @@ national_math[["Average", "Standard Error"]] = national_math[["Average", "Standa
 # 과학 로드
 @st.cache(allow_output_mutation=True)
 def load_national_science():
-    data = pd.read_excel("https://raw.githubusercontent.com/wumusill/Structure/main/dataset/international_test.xls", sheet_name=2)
+    data = pd.read_excel("data/international_test.xls", sheet_name=2)
     return data
 
 national_science = load_national_science()
@@ -131,14 +131,14 @@ st.markdown("### 📶중-고등학생 국내 학업성취도 변화")
 # 중등 로드
 @st.cache(allow_output_mutation=True)
 def load_kr_mid_test():
-    data = pd.read_excel("https://raw.githubusercontent.com/wumusill/Structure/main/dataset/kr_test.xls", sheet_name="중등")
+    data = pd.read_excel("data/kr_test.xls", sheet_name="중등")
     return data
 
 
 # 고등 로드
 @st.cache(allow_output_mutation=True)
 def load_kr_high_test():
-    data = pd.read_excel("https://raw.githubusercontent.com/wumusill/Structure/main/dataset/kr_test.xls", sheet_name="고등")
+    data = pd.read_excel("data//kr_test.xls", sheet_name="고등")
     return data
 
 # 데이터 로드
