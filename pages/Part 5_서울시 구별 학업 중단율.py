@@ -36,7 +36,7 @@ st.header("5️⃣ Part 5. 서울시 구별 학업 중단율")
 #     return data
 
 
-data = pd.read_csv("data/seoul_stop_school.csv", encoding='cp949')
+data = pd.read_csv("data/seoul_stop_school.csv")
 data.index = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
 data = data.astype("float")
 
