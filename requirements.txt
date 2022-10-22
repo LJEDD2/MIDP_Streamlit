@@ -10,9 +10,7 @@ matplotlib
 koreanize_matplotlib
 cufflinks
 
-streamlit_folium
 pyecharts
 FinanceDataReader
 time
-plotly
 requests
