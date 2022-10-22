@@ -33,11 +33,18 @@ for i in range(100):
 st.title("내 거친 성적과 불안한 공교육💦")
 
 ## Header
-st.header("MID PROJECT\n ### : 초중등 시험 폐지 이후 사교육 환경 변화와 원인 분석")
+st.header("MID PROJECT\n ###### : 초중등 시험 폐지 이후 대한민국 사교육 환경 변화와 원인 분석")
+st.markdown("\n\n##### Report")
+# Link
+st.markdown("🔗 GITHUB : [Github LINK ](https://github.com/wumusill/Structure)")
+st.markdown("🔗 EDA CODE :[Structure_EDA.ipynb](https://nbviewer.org/github/LJEDD2/Structure/blob/main/Structure_EDA.ipynb)")
+st.markdown("🔗 NOTION: [[구조] MID프로젝트 결과물](https://canary-beryl-218.notion.site/MiD-9f2b50c7238a4edca1fc07a2dc95f7a9)")
+st.markdown("🔗 DASH BOARD : [MIDP_Streamlit.git](https://github.com/LJEDD2/MIDP_Streamlit)")
+
+st.markdown("---")
+st.markdown("## 9️⃣ Structure ")
 st.text("팀장 : 🦁이정은")
 st.text("팀원 : 🦁문영운, 🦁구자현, 🦁안혜윤, 🦁문종현")
-st.sidebar.markdown("[🔗Structure_EDA.ipynb](https://nbviewer.org/github/LJEDD2/Structure/blob/main/Structure_EDA.ipynb)")
-
 st.markdown("---")
 
 st.markdown("## 사용 라이브러리")
@@ -103,5 +110,6 @@ st.markdown("1. 초-중학생 사교육 참여율이 점점 증가하고 있다.
             "3. 물가 지수 큰 영향을 미치지는 않았던 것으로 판단된다. \n"
             "4. 이러한 사교육 지출에서 ‘학원’이 가장 큰 비율을 차지했다.\n"
             "5. 서울 강남구에 사설학원이 매우 밀집 되어 있음을 알 수 있었다. \n")
-st.markdown("---")
+
 st.markdown("본 프로젝트를 통해 10년 간 교육 정책에 어떤 변화가 생겼는지,\n\n 시험 부활에 대한 논의가 다시 이루어지게 된 배경에 대해 조금 더 자세히 알아보려고 한다.\n")
+st.markdown("---")
