@@ -129,6 +129,7 @@ with container2:
 
 st.markdown("---")
 st.markdown("### 📶중-고등학생 국내 학업성취도 변화")
+st.markdown("↔️그래프에 마우스를 올리면 확대 가능")
 # # 중등 로드
 # @st.cache(allow_output_mutation=True)
 # def load_kr_mid_test():

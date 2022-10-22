@@ -28,15 +28,17 @@ st.header("5️⃣ Part 5. 서울시 구별 학업 중단율")
 
 DATA_URL = "data/seoul_stop_school.csv"
 
-@st.cache(allow_output_mutation=True)
-def load_data():
-    data = pd.read_csv(DATA_URL)
-    data.index = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
-    data = data.astype("float")
-    return data
+# @st.cache(allow_output_mutation=True)
+# def load_data():
+#     data = pd.read_csv(DATA_URL)
+#     data.index = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+#     data = data.astype("float")
+#     return data
 
 
-data = load_data()
+data = pd.read_csv(DATA_URL)
+data.index = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+data = data.astype("float")
 
 st.markdown("### 🔽 학교급 선택 ")
 # 학교 조건
