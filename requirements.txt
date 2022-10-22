@@ -9,7 +9,6 @@ matplotlib
 koreanize_matplotlib
 cufflinks
 pyecharts
-FinanceDataReader
 time
 requests
 Image
