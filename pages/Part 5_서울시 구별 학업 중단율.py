@@ -26,7 +26,7 @@ for i in range(100):
 
 st.header("5️⃣ Part 5. 서울시 구별 학업 중단율")
 
-DATA_URL = "https://raw.githubusercontent.com/wumusill/Structure/main/dataset_eda/seoul_stop_school.csv"
+DATA_URL = "data/seoul_stop_school.csv"
 
 @st.cache(allow_output_mutation=True)
 def load_data():
