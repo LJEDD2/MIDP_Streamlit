@@ -12,3 +12,7 @@ cufflinks
 
 streamlit_folium
 pyecharts
+FinanceDataReader
+time
+plotly
+requests
