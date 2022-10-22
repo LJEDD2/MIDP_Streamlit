@@ -15,38 +15,57 @@ from pyecharts.commons.utils import JsCode
 from pyecharts.charts import Bar, Bar3D, Line, Pie, Timeline, Tab
 from pyecharts import options as opts
 
-st.set_page_config(layout='wide')
-    
+st.set_page_config(
+    page_title="9조 streamlit_page",
+    page_icon="🖍",
+    layout="wide",
+) # 웹페이지 탭 디자인 설정
+
+# 페이지 로드 진행 상황 바
+latest_iteration = st.empty()
+bar = st.progress(0)
+for i in range(100):
+    latest_iteration.text(f'Iteration {i+1}')
+    bar.progress(i + 1)
+    time.sleep(0.01)
+
 ## Title
 st.title("내 거친 성적과 불안한 공교육💦")
 
 ## Header
 st.header("MID PROJECT\n ### : 초중등 시험 폐지 이후 사교육 환경 변화와 원인 분석")
-st.text("팀장 : 이정은")
-st.text("팀원 : 문영운, 구자현, 안혜윤, 문종현")
+st.text("팀장 : 🦁이정은")
+st.text("팀원 : 🦁문영운, 🦁구자현, 🦁안혜윤, 🦁문종현")
+st.sidebar.markdown("[🔗Structure_EDA.ipynb](https://nbviewer.org/github/LJEDD2/Structure/blob/main/Structure_EDA.ipynb)")
+
 st.markdown("---")
 
 st.markdown("## 사용 라이브러리")
 with st.echo():
-    import numpy as np
     import pandas as pd
+    import numpy as np
     import seaborn as sns
-    import plotly.express as px
-    import matplotlib.pyplot as plt
-    import time
     import koreanize_matplotlib
-    
+    import matplotlib.pyplot as plt
+    from glob import glob
+    import requests
+    import warnings
     import folium
     import json
 
-    import streamlit as st
-    from streamlit_folium import st_folium
+    import pandas as pd 
+    from glob import glob 
+    import datetime as dt
+    from dateutil.parser import parse
 
-    from pyecharts.globals import ThemeType
-    from pyecharts.commons.utils import JsCode
-    from pyecharts.charts import Bar, Bar3D, Line, Pie, Timeline, Tab
-    from pyecharts import options as opts
-        
+    import FinanceDataReader as fdr
+    import plotly.express as px
+    import plotly.graph_objects as go
+
+    import matplotlib.font_manager as fm
+    import plotly.express as px
+    import sys
+
 
 ## Data Load
 df_korea_city = pd.read_csv("data/korea_city.csv",encoding ='cp949')
@@ -85,4 +104,4 @@ st.markdown("1. 초-중학생 사교육 참여율이 점점 증가하고 있다.
             "4. 이러한 사교육 지출에서 ‘학원’이 가장 큰 비율을 차지했다.\n"
             "5. 서울 강남구에 사설학원이 매우 밀집 되어 있음을 알 수 있었다. \n")
 st.markdown("---")
-st.markdown("본 프로젝트의 목표는 10년 간 교육 정책에 어떤 변화가 생겼고, 시험 부활에 대한 논의가 \"다시 이루어지게 된 배경\"에 대해 조금 더 자세히 알아보려고 한다.\n")
+st.markdown("본 프로젝트를 통해 10년 간 교육 정책에 어떤 변화가 생겼는지,\n\n 시험 부활에 대한 논의가 다시 이루어지게 된 배경에 대해 조금 더 자세히 알아보려고 한다.\n")
