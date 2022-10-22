@@ -28,32 +28,32 @@ st.markdown("#### : Reading - Math - Science ")
 
 # 국제 학업성취도 성적
 # 국어 로드
-# @st.cache(allow_output_mutation=True)
-# def load_national_reading():
-#     data = pd.read_excel("data/international_test.xls", sheet_name=0)
-#     return data
+@st.cache(allow_output_mutation=True)
+def load_national_reading():
+    data = pd.read_excel("data/international_test.xls", sheet_name=0, engine='openpyxl')
+    return data
 
-national_reading = pd.read_excel("data/international_test.xls", sheet_name=0)
+national_reading = load_national_reading()
 national_reading[["Average", "Standard Error"]] = national_reading[["Average", "Standard Error"]].astype("float")
 
 
-# # 수학 로드
-# @st.cache(allow_output_mutation=True)
-# def load_national_math():
-#     data = pd.read_excel("data/international_test.xls", sheet_name=1)
-#     return data
+# 수학 로드
+@st.cache(allow_output_mutation=True)
+def load_national_math():
+    data = pd.read_excel("data/international_test.xls", sheet_name=1, engine='openpyxl')
+    return data
 
-national_math = pd.read_excel("data/international_test.xls", sheet_name=1)
+national_math = load_national_math()
 national_math[["Average", "Standard Error"]] = national_math[["Average", "Standard Error"]].astype("float")
 
 
-# # 과학 로드
-# @st.cache(allow_output_mutation=True)
-# def load_national_science():
-#     data = pd.read_excel("data/international_test.xls", sheet_name=2)
-#     return data
+# 과학 로드
+@st.cache(allow_output_mutation=True)
+def load_national_science():
+    data = pd.read_excel("data/international_test.xls", sheet_name=2, engine='openpyxl')
+    return data
 
-national_science = pd.read_excel("data/international_test.xls", sheet_name=2)
+national_science = load_national_science()
 national_science[["Average", "Standard Error"]] = national_science[["Average", "Standard Error"]].astype("float")
 
 # 읽기 top5
@@ -129,22 +129,22 @@ with container2:
 
 st.markdown("---")
 st.markdown("### 📶중-고등학생 국내 학업성취도 변화")
-# # 중등 로드
-# @st.cache(allow_output_mutation=True)
-# def load_kr_mid_test():
-#     data = pd.read_excel("data/kr_test.xls", sheet_name="중등")
-#     return data
+# 중등 로드
+@st.cache(allow_output_mutation=True)
+def load_kr_mid_test():
+    data = pd.read_excel("data/kr_test.xls", sheet_name="중등", engine='openpyxl')
+    return data
 
 
-# # 고등 로드
-# @st.cache(allow_output_mutation=True)
-# def load_kr_high_test():
-#     data = pd.read_excel("data//kr_test.xls", sheet_name="고등")
-#     return data
+# 고등 로드
+@st.cache(allow_output_mutation=True)
+def load_kr_high_test():
+    data = pd.read_excel("data//kr_test.xls", sheet_name="고등", engine='openpyxl')
+    return data
 
 # 데이터 로드
-kr_mid_test = pd.read_excel("data/kr_test.xls", sheet_name="중등")
-kr_high_test = pd.read_excel("data//kr_test.xls", sheet_name="고등")
+kr_mid_test = load_kr_mid_test()
+kr_high_test = load_kr_high_test()
 if st.checkbox('Show Code'):
     with st.echo:
         mid_3 = sns.lmplot(data=kr_mid_test, x="연도", y=selected_level, hue='과목', ci=None)
