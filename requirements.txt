@@ -12,3 +12,4 @@ cufflinks==0.17.3
 pyecharts==1.9.0
 requests==2.28.1
 finance-datareader==0.9.42
+bs4
