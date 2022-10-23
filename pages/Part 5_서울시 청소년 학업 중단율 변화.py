@@ -24,7 +24,7 @@ for i in range(100):
     bar.progress(i + 1)
     time.sleep(0.01)
 
-st.header("5️⃣ Part 5. 서울시 청소년 학업 중단율")
+st.header("5️⃣ Part 5. 서울시 각 지역별 학업 중단율의 변화")
 
 # DATA_URL = "data/seoul_stop_school.csv"
 
@@ -91,7 +91,5 @@ m.choropleth(geo_data=geo_json,
                  line_opacity=0.2,
                  legend_name="구별 학업 중단율"
                  )
-
-
 # 출력
 st_data = st_folium(m, width=2100)
