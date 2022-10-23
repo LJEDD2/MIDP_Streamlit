@@ -52,7 +52,7 @@ st.markdown("### 🙋‍♀️코로나 이후 학생 중 온라인 학습을 �
 if st.checkbox('Show Code',key=11):
     with st.echo():
         fig1 = px.pie(df_online_per, values="계", names="항목", title="온라인 학습 경험 비율(2021년 기준), %")
-        st.plotly_chart(fig1)
+        
 
 fig1 = px.pie(df_online_per, values="계", names="항목", title="온라인 학습 경험 비율(2021년 기준 :%)")
 st.plotly_chart(fig1)
@@ -69,7 +69,7 @@ if st.checkbox('Show Code',key=12):
 
         layout2 = go.Layout(title='원격수업 효과성 판단 여부, %', font={'size':15})              
         fig2 = go.Figure(data=data2, layout=layout2)
-        st.plotly_chart(fig2)
+       
 
 data2 = go.Bar(x=df_effect2["항목"], y=df_effect2["계"], marker = {'color':colors, # 막대 색상 또는 리스트를 이용하여 각 막대 색상 변경가능
                                     'line':{'color':'black', 'width':3}, # 막대 테두리 설정
@@ -97,7 +97,7 @@ if st.checkbox('Show Code',key=13):
         fig3.update_layout(autosize=False,
             width=1000,
             height=1000)
-        st.plotly_chart(fig3)
+        
 
 data3 = go.Bar(x=df_reason["계"], y=df_reason["항목"], 
                 orientation='h', marker = {'color':colors2, # 막대 색상 또는 리스트를 이용하여 각 막대 색상 변경가능

@@ -96,7 +96,6 @@ if st.checkbox('Show Code',key = 1):
         science = sns.lmplot(data=science_top5, x="Year/Study", y="Average", hue='Jurisdiction', ci=None)
         fig_science = science.fig
         plt.title("science score")
-        st.markdown("---")
 
 # 읽기 시각화
 reading = sns.lmplot(data=reading_top5, x="Year/Study", y="Average", hue='Jurisdiction', ci=None)
@@ -146,7 +145,7 @@ st.markdown("↔️그래프에 마우스를 올리면 확대 가능")
 # 데이터 로드
 kr_mid_test = pd.read_excel("data/kr_test.xlsx", sheet_name="중등")
 kr_high_test = pd.read_excel("data//kr_test.xlsx", sheet_name="고등")
-if st.checkbox('Show Code'):
+if st.checkbox('Show Code', key = 2):
     with st.echo:
         mid_3 = sns.lmplot(data=kr_mid_test, x="연도", y=selected_level, hue='과목', ci=None)
         fig_mid_3 = mid_3.fig   
