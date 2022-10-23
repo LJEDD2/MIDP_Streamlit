@@ -68,35 +68,8 @@ math_top5 = math_top5.groupby("Year/Study").head()
 science_top5 = national_science.sort_values(["Year/Study", "Average"], ascending=[True, False])
 science_top5 = science_top5.groupby("Year/Study").head()
 
-if st.checkbox('Show Code',key = 1):
-    with st.echo:
-        # 읽기 top5
-        reading_top5 = national_reading.sort_values(["Year/Study", "Average"], ascending=[True, False])
-        reading_top5 = reading_top5.groupby("Year/Study").head()
 
-        # 수학 top5
-        math_top5 = national_math.sort_values(["Year/Study", "Average"], ascending=[True, False])
-        math_top5 = math_top5.groupby("Year/Study").head()
-
-        # 과학 top5
-        science_top5 = national_science.sort_values(["Year/Study", "Average"], ascending=[True, False])
-        science_top5 = science_top5.groupby("Year/Study").head()
-
-        # 읽기 시각화
-        reading = sns.lmplot(data=reading_top5, x="Year/Study", y="Average", hue='Jurisdiction', ci=None)
-        fig_reading = reading.fig
-        plt.title("reading score")
-
-        # 수학 시각화
-        math = sns.lmplot(data=math_top5, x="Year/Study", y="Average", hue='Jurisdiction', ci=None)
-        fig_math = math.fig
-        plt.title("math score")
-
-        # 과학 시각화
-        science = sns.lmplot(data=science_top5, x="Year/Study", y="Average", hue='Jurisdiction', ci=None)
-        fig_science = science.fig
-        plt.title("science score")
-
+st.markdown("↔️그래프에 마우스를 올리면 확대 가능")
 # 읽기 시각화
 reading = sns.lmplot(data=reading_top5, x="Year/Study", y="Average", hue='Jurisdiction', ci=None)
 fig_reading = reading.fig
@@ -145,17 +118,6 @@ st.markdown("↔️그래프에 마우스를 올리면 확대 가능")
 # 데이터 로드
 kr_mid_test = pd.read_excel("data/kr_test.xlsx", sheet_name="중등")
 kr_high_test = pd.read_excel("data//kr_test.xlsx", sheet_name="고등")
-if st.checkbox('Show Code', key = 2):
-    with st.echo:
-        mid_3 = sns.lmplot(data=kr_mid_test, x="연도", y=selected_level, hue='과목', ci=None)
-        fig_mid_3 = mid_3.fig   
-        plt.title(f"국내 중학생 학업성취도 평가 {selected_level}")
-
-
-        high_3 = sns.lmplot(data=kr_high_test, x="연도", y=selected_level, hue='과목', ci=None)
-        fig_high_3 = high_3.fig
-        plt.title(f"국내 고등학교 학업성취도 평가 {selected_level}")
-
 
 # 사이드바 검색 기능
 st.sidebar.header("성취 수준별 데이터 시각화")
