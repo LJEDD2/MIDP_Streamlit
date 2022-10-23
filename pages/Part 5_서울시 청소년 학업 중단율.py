@@ -24,7 +24,7 @@ for i in range(100):
     bar.progress(i + 1)
     time.sleep(0.01)
 
-st.header("5️⃣ Part 5. 서울시 구별 학업 중단율")
+st.header("5️⃣ Part 5. 서울시 청소년 학업 중단율")
 
 # DATA_URL = "data/seoul_stop_school.csv"
 

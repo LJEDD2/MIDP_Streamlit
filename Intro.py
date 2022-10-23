@@ -5,6 +5,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import folium
 import json
+from PIL import Image
 
 import streamlit as st
 from streamlit_folium import st_folium
@@ -30,11 +31,21 @@ for i in range(100):
     time.sleep(0.01)
 
 ## Title
-st.title("내 거친 성적과 불안한 공교육💦")
+st.title("내 거친 성적과 불안한 공교육~~과악~~💦")
+
+# img = Image.open("data/title_png.png")
+# st.image(img,width=500, caption="내 거친 생각과아악")
 
 ## Header
-st.header("MID PROJECT\n ###### : 초중등 시험 폐지 이후 대한민국 사교육 환경 변화와 원인 분석")
-st.markdown("\n\n##### Report")
+st.header("LikeLion AIS7 MID PROJECT")
+st.markdown("###### 분석 주제 : 초중등 시험 폐지 이후 대한민국 사교육 환경 변화와 원인 분석")
+st.markdown("###### 프로젝트 기간 : 2022-10-17 ~ 2022-10-23")
+
+st.markdown("## 9️⃣ Structure ")
+st.text(" 팀장 : 🦁이정은")
+st.text(" 팀원 : 🦁문영운, 🦁구자현, 🦁안혜윤, 🦁문종현")
+
+st.markdown("#### Report")
 # Link
 st.markdown("🔗 GITHUB : [Github LINK ](https://github.com/wumusill/Structure)")
 st.markdown("🔗 EDA CODE :[Structure_EDA.ipynb](https://nbviewer.org/github/LJEDD2/Structure/blob/main/Structure_EDA.ipynb)")
@@ -42,26 +53,19 @@ st.markdown("🔗 NOTION: [[구조] MID프로젝트 결과물](https://canary-be
 st.markdown("🔗 DASH BOARD : [MIDP_Streamlit.git](https://github.com/LJEDD2/MIDP_Streamlit)")
 
 st.markdown("---")
-st.markdown("## 9️⃣ Structure ")
-st.text("팀장 : 🦁이정은")
-st.text("팀원 : 🦁문영운, 🦁구자현, 🦁안혜윤, 🦁문종현")
-st.markdown("---")
 
 st.markdown("## 사용 라이브러리")
 with st.echo():
+    import sys
     import pandas as pd
     import numpy as np
     import seaborn as sns
     import koreanize_matplotlib
     import matplotlib.pyplot as plt
-    from glob import glob
-    import requests
-    import warnings
-    import folium
-    import json
 
-    import pandas as pd 
-    from glob import glob 
+    from glob import glob
+    from PIL import Image
+
     import datetime as dt
     from dateutil.parser import parse
 
@@ -70,9 +74,12 @@ with st.echo():
     import plotly.graph_objects as go
 
     import matplotlib.font_manager as fm
-    import plotly.express as px
-    import sys
-
+    import requests
+    import warnings
+    import folium
+    import json
+    
+    
 
 ## Data Load
 df_korea_city = pd.read_csv("data/korea_city.csv",encoding ='cp949')
