@@ -44,7 +44,6 @@ st.markdown("🔗 GITHUB : [Github LINK ](https://github.com/wumusill/Structure)
 st.markdown("🔗 EDA CODE :[Structure_EDA.ipynb](https://nbviewer.org/github/LJEDD2/Structure/blob/main/Structure_EDA.ipynb)")
 st.markdown("🔗 NOTION: [[구조] MID프로젝트 결과물](https://canary-beryl-218.notion.site/MiD-9f2b50c7238a4edca1fc07a2dc95f7a9)")
 st.markdown("🔗 DASH BOARD : [MIDP_Streamlit.git](https://github.com/LJEDD2/MIDP_Streamlit)")
-
 st.markdown(" ")
 st.markdown("## 9️⃣ Team Structure ")
 st.markdown("""

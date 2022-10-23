@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-import koreanize_matplotlib
 import streamlit.components.v1 as components
 import time
 
