@@ -28,8 +28,11 @@
 ---
 
 ## ❓핵심 INSIGHT
+<img src="https://github.com/LJEDD2/MIDP_Streamlit/blob/main/Result/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C15.png">
+<img src="https://github.com/LJEDD2/MIDP_Streamlit/blob/main/Result/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C8.png">
+<img src="https://github.com/LJEDD2/MIDP_Streamlit/blob/main/Result/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C11.png">
+<img src="https://github.com/LJEDD2/MIDP_Streamlit/blob/main/Result/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C12.png">
 
----
 
 ## 📑 프로젝트 배경
 #### 1. 초등학교 시험 폐지
