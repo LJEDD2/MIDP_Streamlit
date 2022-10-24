@@ -24,12 +24,39 @@
 | 🦁팀원 | 문종현 | 팀원 깃 허브 교육 담당 가설 3 데이터 수집 및 분석(EDA) 담당, 결과보고서 작성 및 최종 파일 검토, Streamlit 베이스라인 코드 구축  |
 | 🦁팀원 | 안혜윤 |  PPT 작성 및 결과 보고회 발표자 , 결과보고서 작성 및 검토 응원단장, 가설 4 데이터 수집 및 분석(EDA) 담당  |
 | 🦁팀원 | 문영운  | 데이터 수집을 위한 훌륭한 영업사원 , PPT 작성 및 결과 보고회 발표자, 가설 5 데이터 수집 및 분석(EDA) 담당  |
+---
+## ❓핵심 INSIGHT
+---
+## 📑 프로젝트 배경
+---
+## 📝 Hypothesis 
+---
+## 📥 Dataset
+--
+## 🗃️ Library
+```
+import sys
+    import pandas as pd
+    import numpy as np
+    import seaborn as sns
+    import koreanize_matplotlib
+    import matplotlib.pyplot as plt
+
+    from glob import glob
+    from PIL import Image
+
+    import datetime as dt
+    from dateutil.parser import parse
+
+    import FinanceDataReader as fdr
+    import plotly.express as px
+    import plotly.graph_objects as go
+
+    import matplotlib.font_manager as fm
+    import requests
+    import warnings
+    import folium
+    import json
+```
 
 
-  
-```
-으쌰으쌰1팀  
-9조 Structure 
-팀장 : 이정은
-팀원 : 구자현 문종현 안혜윤 문영운
-```
