@@ -12,7 +12,7 @@
 🔗 GITHUB : [Github LINK ](https://github.com/wumusill/Structure)  
 🔗 EDA CODE :[Structure_EDA.ipynb](https://nbviewer.org/github/LJEDD2/Structure/blob/main/Structure_EDA.ipynb)  
 🔗 NOTION: [[구조] MID프로젝트 결과물](https://canary-beryl-218.notion.site/MiD-9f2b50c7238a4edca1fc07a2dc95f7a9)  
-🔗 DASH BOARD : [MIDP_Streamlit.git](https://github.com/LJEDD2/MIDP_Streamlit)  
+🔗 DASH BOARD : [MIDP_Streamlit.git](https://ljedd2-midp-streamlit-intro-kizzcq.streamlitapp.com/)  
 
 ---
 ## 9️⃣ Team Structure 
